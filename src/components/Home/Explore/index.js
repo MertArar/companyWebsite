@@ -1,4 +1,4 @@
-import planet01 from "../Home/Explore/images/planet-01.png";
+import planet01 from "./images/planet-01.png";
 
 export const exploreWorlds = [
   {

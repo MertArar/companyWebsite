@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
 
-import headset from "../images/headset.svg";
-
 import styles from "../styles";
 import { fadeIn } from "../../../../utils/motion";
 

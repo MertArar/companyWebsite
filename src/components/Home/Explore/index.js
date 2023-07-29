@@ -1,29 +1,33 @@
-import planet01 from "./images/planet-01.png";
+import planet01 from "../../../assets/slider-img/planet-01.png";
+import planet02 from "../../../assets/slider-img/planet-02.png";
+import planet03 from "../../../assets/slider-img/planet-03.png";
+import planet04 from "../../../assets/slider-img/planet-04.png";
+import planet05 from "../../../assets/slider-img/planet-05.png";
 
 export const exploreWorlds = [
   {
     id: "world-1",
-    imgUrl: { planet01 },
+    imgUrl: planet01,
     title: "The Hogwarts",
   },
   {
     id: "world-2",
-    imgUrl: "../../assets/planet-02.png",
+    imgUrl: planet02,
     title: "The Upside Down",
   },
   {
     id: "world-3",
-    imgUrl: "../../assets/planet-03.png",
+    imgUrl: planet03,
     title: "Kadirojo Permai",
   },
   {
     id: "world-4",
-    imgUrl: "../../assets/planet-04.png",
+    imgUrl: planet04,
     title: "Paradise Island",
   },
   {
     id: "world-5",
-    imgUrl: "../../assets/planet-05.png",
+    imgUrl: planet05,
     title: "Hawkins Labs",
   },
 ];

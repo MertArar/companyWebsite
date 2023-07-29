@@ -1,5 +1,9 @@
 import { motion } from "framer-motion";
 
+import headset from "../../../../assets/slider-img/headset.svg";
+
+import { exploreWorlds } from "../index";
+
 import styles from "../styles";
 import { fadeIn } from "../../../../utils/motion";
 

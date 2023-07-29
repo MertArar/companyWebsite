@@ -1,10 +1,11 @@
 import React from "react";
+import { BsArrowRight } from "react-icons/bs";
 
-import heroVid from "../../../assets/video.mp4";
+import heroVid from "../../../assets/video3.mp4";
 
 const Hero = () => {
   return (
-    <div className="w-full h-[90vh] top-[90px]">
+    <div className="w-full h-[90vh] top-[90px] flex justify-center items-center">
       <video
         className="object-cover h-full w-full absolute -z-10"
         src={heroVid}
@@ -12,24 +13,20 @@ const Hero = () => {
         loop
         muted
       />
-      <div className="w-full h-[90%] flex flex-col justify-center items-center text-white px-4 text-center">
-        <h1>Decentralized</h1>
-        <h1 className="py-2">
-          <span className="blue">Trading</span> Protocol
+      <div className="w-full h-[100%] flex flex-col ml-0 sm:ml-40 justify-center items-start text-white px-4">
+        <h1 className="text-[3rem] max-w-3xl font-bold sm:text-[6rem] text-left">
+          Creativity In Our Blood Line
         </h1>
-        <p className="text-xl py-4">
-          Guaranteed liquidity trading for millions of users and top Ethereum
-          applications.
-        </p>
-        <div>
-          <button className="m-2">Use Defi</button>
-          <button className="m-2">FAQ</button>
+
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-x-80 justify-between mt-5">
+          <span className="flex flex-row justify-center items-center gap-3 text-xl hover:text-red-500 hover:animate-pulse cursor-pointer">
+            Get a Quote <BsArrowRight />
+          </span>
+          <p className="text-md sm:text-xl max-w-xl py-4 text-start">
+            We deliver best problem solving solution for our client and provide
+            finest finishing product in present and upcoming future
+          </p>
         </div>
-      </div>
-      <div>
-        <p className="text-center text-white text-2xl font-bold">
-          Total Volume Secured: $42,104,783,662.47
-        </p>
       </div>
     </div>
   );

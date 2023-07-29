@@ -17,13 +17,13 @@ const Navbar = () => {
   return (
     <div
       className={`${
-        active ? "shadow-lg bg-Solitude" : ""
+        active ? "shadow-lg bg-black h-18 ease-in-out " : ""
       } fixed w-full top-0 left-0 z-20`}
     >
       <div>
         <div
           className={`${
-            active ? "py-2 transition-all duration-300" : "py-4"
+            active ? "py-2 transition-all duration-300 " : "py-4"
           } container  mx-auto flex items-center justify-between px-2`}
         >
           <div className="flex items-center gap-4">
@@ -31,8 +31,8 @@ const Navbar = () => {
               className="text-3xl sm:hidden cursor-pointer text-white"
               onClick={() => setToggle(true)}
             />
-            <div className="text-xl text-Teal uppercase tracking-wide font-bold">
-              Skillex
+            <div className="text-xl text-Teal uppercase tracking-wide text-white font-bold">
+              Arino
             </div>
           </div>
           <div className="sm:flex items-center hidden">
@@ -40,15 +40,12 @@ const Navbar = () => {
               return <NavLink key={navLink.id} {...navLink} />;
             })}
           </div>
-          <button className="py-3 px-6 font-bold text-sm border border-solid rounded-lg border-gray">
-            Sign Up
-          </button>
           {toggle && (
             <motion.div
               initial={{ x: -500, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.3 }}
-              className="fixed h-full w-96 top-0 left-0 z-20 bg-Teal text-white flex flex-col justify-center items-center shadow-lg gap-8 py-8"
+              className="fixed h-full w-96 top-0 left-0 z-20 bg-black text-white flex flex-col justify-center items-center shadow-lg gap-8 py-8"
             >
               {navLinks.map((navLink) => {
                 return (

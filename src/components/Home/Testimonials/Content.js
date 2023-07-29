@@ -1,6 +1,10 @@
-export const content = [
+import avatar1 from "../../../assets/testimonials/avatar1.png";
+import avatar2 from "../../../assets/testimonials/avatar2.png";
+import avatar3 from "../../../assets/testimonials/avatar3.png";
+import avatar4 from "../../../assets/testimonials/avatar4.png";
 
-Testimonials: {
+export const content = {
+  Testimonials: {
     title: "Testimonials",
     subtitle: "MY CLIENT REVIEWS",
     testimonials_content: [
@@ -30,5 +34,4 @@ Testimonials: {
       },
     ],
   },
-  
-]
+};

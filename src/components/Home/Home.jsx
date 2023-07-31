@@ -5,7 +5,6 @@ import Hero from "./Hero/Hero";
 import Explore from "./Explore/Explore";
 import Testimonials from "./Testimonials/Testimonials";
 import Experience from "./Experience/Experience";
-import Cta from "./CTA/Cta";
 import Partners from "./Partners/Partners";
 
 const Home = () => {
@@ -13,7 +12,6 @@ const Home = () => {
     <div>
       <Navbar />
       <Hero />
-      <Cta />
       <Explore />
       <Testimonials />
       <Experience />

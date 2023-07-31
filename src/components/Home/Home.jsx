@@ -6,12 +6,14 @@ import Explore from "./Explore/Explore";
 import Testimonials from "./Testimonials/Testimonials";
 import Experience from "./Experience/Experience";
 import Partners from "./Partners/Partners";
+import Services from "./Services/Services";
 
 const Home = () => {
   return (
     <div>
       <Navbar />
       <Hero />
+      <Services />
       <Explore />
       <Testimonials />
       <Experience />

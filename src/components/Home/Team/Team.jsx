@@ -32,7 +32,7 @@ const Team = () => {
         />
       </motion.div>
       <div className="flex flex-row justify-center items-center gap-8 mb-[100px]">
-        <div className="flex flex-row gap-6">
+        <div className="flex flex-col sm:flex-row gap-6">
           <TeamCard imgSrc={img1} className="flex flex-col">
             <div className="flex flex-col ml-1">
               <span className="text-[20px] font-bold mb-2">Berkay Işılak</span>

@@ -58,17 +58,21 @@ const Testimonials = () => {
               <div
                 className={` duration-500 bg-bg_light_primary mx-8 border-2 
               p-8 h-full rounded-2xl flex items-center gap-6
-               border-slate-200 md:flex-row relative flex-col cursor-pointer
+               border-slate-200 md:flex-row relative  flex-col cursor-pointer
                 ${activeIndex !== i && "scale-75 blur-none"}`}
               >
                 <img src={content.img} alt="..." className="h-24 md:h-18" />
                 <div>
-                  <p className="sm:text-base text-2xl text-white">
+                  <p className="sm:text-[20px] text-[18px] text-white">
                     {content.review}
                   </p>
                   <br />
-                  <h6 className="text-white/70">{content.name}</h6>
-                  <h6 className="text-white/70">{content.attribute}</h6>
+                  <h6 className="text-white/70 text-[14px] sm:text-[16px]">
+                    {content.name}
+                  </h6>
+                  <h6 className="text-white/70 text-[14px] sm:text-[12px]">
+                    {content.attribute}
+                  </h6>
                 </div>
               </div>
             </SwiperSlide>

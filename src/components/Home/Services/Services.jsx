@@ -11,7 +11,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 const Services = () => {
   return (
-    <div className="flex flex-row justify-center gap-10 items-center ">
+    <div className="flex flex-col justify-center sm:flex-row ml-10 sm:ml-3 gap-10 items-center ">
       {/* left side */}
       <div className="flex flex-col gap-y-6 ">
         <h2 className="text-gray-400 text-xl ">What Can We Do</h2>
@@ -23,7 +23,7 @@ const Services = () => {
         </span>
       </div>
       {/* right side */}
-      <div className="flex flex-row gap-6">
+      <div className="flex flex-col sm:flex-row gap-6">
         <Card imgSrc={service1}>
           <h3 className="text-[22px] font-bold mb-2">Custom UI/UX Design</h3>
         </Card>

@@ -12,25 +12,29 @@ export const content = {
         review:
           "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
         img: avatar1,
-        name: "JOHN DOE",
+        name: "ADI SOYADI",
+        attribute: "CEO of Company",
       },
       {
         review:
           "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
         img: avatar2,
-        name: "Tom Alex",
+        name: "ADI SOYADI",
+        attribute: "CEO of Company",
       },
       {
         review:
           "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
         img: avatar3,
-        name: "Johnny",
+        name: "ADI SOYADI",
+        attribute: "CEO of Company",
       },
       {
         review:
           "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
         img: avatar4,
-        name: "ROBBIN",
+        name: "ADI SOYADI",
+        attribute: "CEO of Company",
       },
     ],
   },

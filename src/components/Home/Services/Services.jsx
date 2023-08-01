@@ -25,7 +25,7 @@ const Services = () => {
       {/* right side */}
       <div className="flex flex-row gap-6">
         <Card imgSrc={service1}>
-          <h3 className="text-[22px] font-bold mb-2">UI/UX Design</h3>
+          <h3 className="text-[22px] font-bold mb-2">Custom UI/UX Design</h3>
         </Card>
         <Card imgSrc={service2}>
           <h3 className="text-[22px] font-bold mb-2">React.js Development</h3>

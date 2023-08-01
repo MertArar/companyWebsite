@@ -1,5 +1,7 @@
 import React, { useRef } from "react";
 
+import { TitleText, TypingText } from "./components/CustomText";
+
 import { motion, useScroll } from "framer-motion";
 import Lilcon from "./components/Lilcon";
 
@@ -45,10 +47,22 @@ const Experience = () => {
     offset: ["start end", "center start"],
   });
   return (
-    <div className="my-64">
-      <h2 className="font-bold text-4xl mb-32 w-full text-center text-white">
-        Experience
-      </h2>
+    <div className="my-64 mb-[100px]">
+      <motion.div
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        className="mx-auto flex flex-col"
+      >
+        <TypingText
+          title="| The Pathway"
+          textStyles="text-center text-white/90 text-lg"
+        />
+        <TitleText
+          title={<>Accompany Our Journey</>}
+          textStyles="text-center mb-10"
+        />
+      </motion.div>
 
       <div ref={ref} className="w-[75%] mx-auto relative ">
         <motion.div

@@ -7,6 +7,7 @@ import Testimonials from "./Testimonials/Testimonials";
 import Experience from "./Experience/Experience";
 import Partners from "./Partners/Partners";
 import Services from "./Services/Services";
+import Team from "./Team/Team";
 
 const Home = () => {
   return (
@@ -15,8 +16,9 @@ const Home = () => {
       <Hero />
       <Services />
       <Explore />
-      <Testimonials />
       <Experience />
+      <Team />
+      <Testimonials />
       <Partners />
       <Footer />
     </div>

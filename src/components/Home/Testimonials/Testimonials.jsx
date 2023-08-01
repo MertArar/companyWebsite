@@ -1,10 +1,16 @@
 import { content } from "./Content";
+
+import { motion } from "framer-motion";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+
+import { TitleText, TypingText } from "./components/CustomText";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+
+import { Pagination } from "swiper/modules";
 
 import { useState } from "react";
 
@@ -13,20 +19,34 @@ const Testimonials = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   return (
     <section>
-      <div className="md:container px-5 pt-14">
-        <h2 className="title" data-aos="fade-down">
-          {Testimonials.title}
-        </h2>
-        <h4 className="subtitle" data-aos="fade-down">
-          {Testimonials.subtitle}
-        </h4>
+      <div className="flex flex-col justify-center items-center px-5 pt-14">
+        <motion.div
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.25 }}
+          className="mx-auto flex flex-col"
+        >
+          <TypingText
+            title="| The Testimonial"
+            textStyles="text-center text-white/90 text-lg"
+          />
+          <TitleText
+            title={<>Opinions of Our Partners</>}
+            textStyles="text-center mb-10"
+          />
+        </motion.div>
         <br />
         <Swiper
           direction={"vertical"}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination]}
           data-aos="fade-up"
           loop={true}
           spaceBetween={40}
-          slidesPerView={1.7}
+          navigation={true}
+          slidesPerView={2}
           onSlideChange={(e) => {
             console.log(e.realIndex);
             setActiveIndex(e.realIndex);
@@ -38,14 +58,17 @@ const Testimonials = () => {
               <div
                 className={` duration-500 bg-bg_light_primary mx-8 border-2 
               p-8 h-full rounded-2xl flex items-center gap-6
-               border-slate-200 md:flex-row flex-col
-                ${activeIndex !== i && "scale-75 blur-sm"}`}
+               border-slate-200 md:flex-row relative flex-col cursor-pointer
+                ${activeIndex !== i && "scale-75 blur-none"}`}
               >
-                <img src={content.img} alt="..." className="h-24" />
+                <img src={content.img} alt="..." className="h-24 md:h-18" />
                 <div>
-                  <p className="sm:text-base text-sm">{content.review}</p>
+                  <p className="sm:text-base text-2xl text-white">
+                    {content.review}
+                  </p>
                   <br />
-                  <h6>{content.name}</h6>
+                  <h6 className="text-white/70">{content.name}</h6>
+                  <h6 className="text-white/70">{content.attribute}</h6>
                 </div>
               </div>
             </SwiperSlide>

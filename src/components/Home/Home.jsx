@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./Navbar/Navbar";
+
 import Footer from "./Footer/Footer";
 import Hero from "./Hero/Hero";
 import Explore from "./Explore/Explore";
@@ -10,11 +10,12 @@ import Services from "./Services/Services";
 import Team from "./Team/Team";
 import ContactHome from "./ContactHome/ContactHome";
 import Stats from "./Stats/Stats";
+import Header from "./Header/Header";
 
 const Home = () => {
   return (
     <div>
-      <Navbar />
+      <Header />
       <Hero />
       <Stats />
       <Services />

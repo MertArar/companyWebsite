@@ -8,6 +8,7 @@ import Experience from "./Experience/Experience";
 import Partners from "./Partners/Partners";
 import Services from "./Services/Services";
 import Team from "./Team/Team";
+import ContactHome from "./ContactHome/ContactHome";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <Team />
       <Testimonials />
       <Partners />
+      <ContactHome />
       <Footer />
     </div>
   );

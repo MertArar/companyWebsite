@@ -12,22 +12,22 @@ export const navLinksdata = [
   {
     _id: 1003,
     title: "Dijital Çözümler",
-    link: "projects",
+    link: "solutions",
   },
   {
     _id: 1004,
     title: "Süreçler",
-    link: "resume",
+    link: "period",
   },
 
   {
     _id: 1006,
     title: "Takım",
-    link: "contact",
+    link: "team",
   },
   {
     _id: 1007,
     title: "İletişim",
-    link: "iletişim",
+    link: "contact",
   },
 ];

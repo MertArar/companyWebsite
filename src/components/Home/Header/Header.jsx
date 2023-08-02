@@ -40,9 +40,9 @@ const Header = () => {
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           {navLinksdata.map(({ _id, title, link }) => (
             <li className="nav-item" key={_id}>
-              {/*<Link activeClass="active" to={link} onClick={closeMenu}>
+              <Link activeClass="active" to={link} onClick={closeMenu}>
                 {title}
-              </Link>*/}
+              </Link>
             </li>
           ))}
         </ul>

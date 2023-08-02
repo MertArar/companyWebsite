@@ -9,12 +9,14 @@ import Partners from "./Partners/Partners";
 import Services from "./Services/Services";
 import Team from "./Team/Team";
 import ContactHome from "./ContactHome/ContactHome";
+import Stats from "./Stats/Stats";
 
 const Home = () => {
   return (
     <div>
       <Navbar />
       <Hero />
+      <Stats />
       <Services />
       <Explore />
       <Experience />

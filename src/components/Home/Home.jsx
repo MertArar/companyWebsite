@@ -1,5 +1,7 @@
 import React from "react";
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Footer from "./Footer/Footer";
 import Hero from "./Hero/Hero";
 import Explore from "./Explore/Explore";
@@ -15,7 +17,6 @@ import Header from "./Header/Header";
 const Home = () => {
   return (
     <div>
-      <Header />
       <Hero />
       <Stats />
       <Services />
@@ -25,7 +26,6 @@ const Home = () => {
       <Testimonials />
       <Partners />
       <ContactHome />
-      <Footer />
     </div>
   );
 };

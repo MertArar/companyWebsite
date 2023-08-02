@@ -19,7 +19,7 @@ const Hero = () => {
     delaySpeed: 2000,
   });
   return (
-    <div className="w-full h-[110vh] top-[90px] flex justify-center items-center">
+    <div className="w-full h-[100vh] top-[0px] flex justify-center items-center">
       <video
         className="object-cover h-full w-full absolute -z-10"
         src={heroVid}

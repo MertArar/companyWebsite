@@ -1,13 +1,24 @@
 import React from "react";
 
+{
+  /* PAGES */
+}
 import Home from "../components/Home/Home";
 import About from "./About/About";
 import Solutions from "./Solutions/Solutions";
 import Period from "./Period/Period";
 import Team from "./Team/Team";
 import Contact from "./Contact/Contact";
+
+{
+  /* COMPONENTS */
+}
 import Header from "../components/Home/Header/Header";
 import Footer from "../components/Home/Footer/Footer";
+
+{
+  /* ROUTES */
+}
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const Pages = () => {

@@ -56,10 +56,10 @@ const Testimonials = () => {
           {Testimonials.testimonials_content.map((content, i) => (
             <SwiperSlide key={i}>
               <div
-                className={` duration-500 bg-bg_light_primary mx-8 border-2 
+                className={` duration-500 bg-transparent mx-8 border-2 
               p-8 h-full rounded-2xl flex items-center gap-6
-               border-slate-200 md:flex-row relative  flex-col cursor-pointer
-                ${activeIndex !== i && "scale-75 blur-none"}`}
+               border-slate-200 md:flex-row flex-col cursor-pointer
+                ${activeIndex !== i && "scale-90 blur-none"}`}
               >
                 <img src={content.img} alt="..." className="h-24 md:h-18" />
                 <div>

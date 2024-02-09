@@ -3,15 +3,15 @@ import { BsArrowRight } from "react-icons/bs";
 
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
-import heroVid from "../../../assets/video3.mp4";
+import heroVid from "../../../assets/bgvideo.mp4";
 
 const Hero = () => {
   const [text] = useTypewriter({
     words: [
-      "Website Development.",
       "Game Development.",
-      "Mobile App Development.",
-      "UI/UX Design.",
+      "PC Games.",
+      "Mobile Games.",
+      "Console Games.",
     ],
     loop: true,
     typeSpeed: 60,
@@ -42,8 +42,9 @@ const Hero = () => {
             Get a Quote <BsArrowRight />
           </span>
           <p className="text-[16px] sm:text-[20px] max-w-xl py-4 text-start">
-            We deliver best problem solving solution for our client and provide
-            finest finishing product in present and upcoming future
+            Imbued with a passion for game development, we meticulously craft
+            details for unforgettable and enjoyable gaming moments, offering a
+            unique joy in the gaming world.
           </p>
         </div>
       </div>

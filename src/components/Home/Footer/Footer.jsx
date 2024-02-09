@@ -9,7 +9,7 @@ import { FaYoutube } from "react-icons/fa";
 function Footer() {
   return (
     <>
-      <div className="bg-transparent h-1/2 w-full flex md:flex-row flex-col justify-around items-start p-20">
+      <div className="bg-transparent h-1/2 w-full flex md:flex-row flex-col justify-around items-start p-12">
         <div className="p-5 ">
           <ul>
             <img src={logo} alt="" className="mb-10" />
@@ -21,26 +21,10 @@ function Footer() {
             </div>
           </ul>
         </div>
+
         <div className="p-5">
           <ul>
-            <p className="text-white/90 font-bold text-2xl pb-6">Çözümler</p>
-            <li className="text-gray-500 text-md pb-4 font-semibold hover:text-red-600 cursor-pointer">
-              Website Geliştirme
-            </li>
-            <li className="text-gray-500 text-md pb-4 font-semibold hover:text-red-600 cursor-pointer">
-              UI/UX Tasarım
-            </li>
-            <li className="text-gray-500 text-md pb-4 font-semibold hover:text-red-600 cursor-pointer">
-              Oyun Geliştirme
-            </li>
-            <li className="text-gray-500 text-md pb-4 font-semibold hover:text-red-600 cursor-pointer">
-              Mobil Uygulama Geliştirme
-            </li>
-          </ul>
-        </div>
-        <div className="p-5">
-          <ul>
-            <p className="text-white/90 font-bold text-2xl pb-6">Anasayfa</p>
+            <p className="text-white/90 font-bold text-2xl pb-6">Home</p>
             <li className="text-gray-500 text-md pb-4 font-semibold hover:text-red-600 cursor-pointer">
               Hakkımızda
             </li>
@@ -79,9 +63,9 @@ function Footer() {
       </div>
       <div className="flex flex-col justify-center items-center text-center  p-5 bg-black">
         <h1 className=" text-white font-normal">
-          © 2022-2023 All rights reserved | Build by{" "}
+          2024 All rights reserved | ©{" "}
           <span className="hover:text-blue-600 font-normal ease-in-out transition-all duration-300 cursor-pointer">
-            Arino{" "}
+            RSquare Game Studios{" "}
           </span>
         </h1>
       </div>
